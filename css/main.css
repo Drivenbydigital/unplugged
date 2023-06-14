@@ -87,10 +87,63 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   .content-wrapper {
-    width: 90%;
-    margin: 50px 0;
-  }
+
+/* General Styles */
+
+html {
+  font-size: 1rem;
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+  font-size: 1.125em;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+
+img {}
+
+figure {}
+
+address {font-style: normal;
+}
+
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
 /*--------------------Base Header -  Footer Styles ---------------*/
 
 header {
@@ -115,7 +168,7 @@ header .content-wrapper {
 
 header nav {
   width: 60%;
-  
+
 }
 
 header nav ul {
@@ -134,7 +187,7 @@ footer {
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
-  
+
 }
 
 footer p {
@@ -199,9 +252,11 @@ aside {
   display: flex;
   justify-content: center;
 }
+
 .reviews h2 {
   margin-bottom: 40px;
 }
+
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
@@ -220,6 +275,7 @@ aside {
   display: flex;
   justify-content: center;
 }
+
 .contact-content p {
   margin: 0;
 }
@@ -469,6 +525,7 @@ aside {
 @media only screen and (min-width: 1200px) {
   /* Desktop Styles Here */
 }
+
 header {
   padding: 15px 0;
 }
@@ -513,7 +570,7 @@ About Page
 
 .mission h2,
 .contact-section .content-wrapper h2 {
-    width: 95%;
+  width: 95%;
 }
 
 /* ==========================================================================
@@ -524,6 +581,7 @@ FAQ Page
 }
 
 }
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -531,6 +589,7 @@ FAQ Page
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -598,4 +657,3 @@ FAQ Page
     page-break-after: avoid;
   }
 }
-
