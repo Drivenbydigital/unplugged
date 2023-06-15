@@ -136,7 +136,8 @@ p {
   line-height: 1.285;
 }
 
-img {width: 100%;
+img {
+  width: 100%;
 }
 
 figure {
@@ -265,6 +266,7 @@ aside {
   justify-content: center;
   background-color: #527158;
 }
+
 aside .form {
   margin-top: 30px;
 }
@@ -462,28 +464,28 @@ aside .form {
    Modify as content requires.
    ========================================================================== */
 
-   
-  input[type=text] {
-    box-sizing: border-box;
-    width: 100%;
-    color: #2a423a;
-    font-style: italic;
-    padding: 1em;
-  }
-   
-  input[type=button] {
-    width: 100%;
-    padding: 20px 0;
-    margin-top: 20px;
-    background-color: #2a423a;
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 1.125em;
-    color: #e2e3ed;
-    border: none;
-    text-align: center;
-    text-transform: uppercase;
-  }
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 @media only screen and (min-width: 768px) {
   /* Tablet Styles Here */
@@ -492,6 +494,16 @@ aside .form {
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
   }
 
   /* Header */
@@ -504,8 +516,12 @@ aside .form {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 30%;
+  }
+
   header nav {
-    width: 22%;
+    width: 20%;
   }
 
   header nav ul {
@@ -517,6 +533,16 @@ aside .form {
   }
 
   /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
   /* Aside */
   aside .content-wrapper {
@@ -533,6 +559,11 @@ aside .form {
   }
 
   /* Features */
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     align-items: center;
@@ -541,7 +572,7 @@ aside .form {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
   /* Reviews */
@@ -550,8 +581,18 @@ aside .form {
     justify-content: space-between;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
+  }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   /* Footer */
@@ -560,10 +601,11 @@ aside .form {
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
@@ -572,6 +614,15 @@ aside .form {
 
   footer .copyright {
     width: 100%;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.285;
   }
 
   /* ==========================================================================
@@ -600,20 +651,14 @@ aside .form {
   }
 
   .map figure {
-    width: 100%;
-    height: 0; 
-    padding-bottom: 125%; 
-    overflow: hidden;
-    position: relative;
-}
- 
-.map iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-}
+    padding-bottom: 45.5%;
+
+  }
+
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
 
   /* ==========================================================================
      FAQ Page
@@ -630,66 +675,114 @@ aside .form {
   .faq h2 {
     width: 100%;
   }
+
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop Styles Here */
-}
 
-header {
-  padding: 15px 0;
-}
 
-.content-wrapper {
-  max-width: 960px;
-}
+  header {
+    padding: 15px 0;
+  }
 
-/* Hero */
-.hero-area h1 {
-  width: 80%;
-}
+  .content-wrapper {
+    max-width: 960px;
+  }
 
-/* Aside */
-aside .content-wrapper {
-  justify-content: space-around;
-}
+  h2 {
+    font-size: 2.25em;
+  }
 
-aside .content-wrapper .form-description,
-aside .content-wrapper .form {
-  width: 30%;
-}
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
 
-/* Features */
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
 
-.features h2 {
-  width: 90%;
-}
+  /* Hero */
+  .hero-area h1 {
+    font-size: 3.75em;
+    width: 80%;
+  }
 
-.features article {
-  flex-basis: 31%;
-}
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
 
-/* Reviews */
-.reviews article div {
-  width: 40%;
-}
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+  }
 
-/* ==========================================================================
+  .form-description p {
+    font-size: 1.125em;
+  }
+
+  /* Features */
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 31%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 40%;
+  }
+
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
+  footer h4 {
+    font-size: 1.875em;
+  }
+
+  /* ==========================================================================
 About Page
 ========================================================================== */
 
-.mission h2,
-.contact-section .content-wrapper h2 {
-  width: 95%;
-}
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+    font-size: 3em;
+  }
 
-/* ==========================================================================
+  .contact-content h4 {
+    font-size: 1.875em;
+  }
+
+  .map figure {
+    padding-bottom: 37.5%;
+  }
+
+  /* ==========================================================================
 FAQ Page
 ========================================================================== */
-.faq h2 {
-  width: 100%;
-}
+  .faq h2 {
+    width: 100%;
+    font-size: 3em;
+  }
 
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
 }
 
 /* ==========================================================================
